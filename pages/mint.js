@@ -134,16 +134,7 @@ babys out known to man." key="twdesc" />
       <div >
           <div className="flex items-center justify-between w-full border-b-2	pb-6">
             <a href="/" className=""><img src="images/Hola.gif" width="108" alt="" className="logo-image" /></a>
-            <nav className="flex flex-wrap flex-row justify-around Poppitandfinchsans">
-              <a href="/#about" className="text-4xl text-white hover:text-black m-6">About</a>
-              <a href="/mint" className="text-4xl text-white hover:text-black m-6">Mint!</a>
-              <a href="/#traits" className="text-4xl text-white hover:text-black m-6">baby traits</a>
-              <a href="/#roadmap" className="text-4xl text-white hover:text-black m-6">Roadmap</a>
-              <a href="/#team" className="text-4xl text-white hover:text-black m-6">Team</a>
-              <a href="/#contact" className="text-4xl text-white hover:text-black m-6">Contact</a>
-              <a href="https://twitter.com/boringbabysco" className="text-4xl  hover:text-white m-6 text-blau">TWITTER</a>
-              <a href="https://discord.gg/8Wk9Hp6UyV" className="text-4xl  hover:text-white m-6 text-blau">DISCORD</a>
-            </nav>
+          
              
           </div>
           <div className="flex auth my-8 font-bold  justify-center items-center vw2">
