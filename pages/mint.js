@@ -133,7 +133,7 @@ babys out known to man." key="twdesc" />
 
       <div >
           <div className="flex items-center justify-between w-full border-b-2	pb-6">
-            <a href="/" className=""><img src="images/baby-coterie-logo.png" width="200" alt="" className="logo-image" /></a>
+            <a href="/" className=""><img src="images/baby-coterie-logo.png" width="300" alt="" className="logo-image" /></a>
           
              
           </div>
