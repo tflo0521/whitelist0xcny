@@ -147,7 +147,7 @@ babys out known to man." key="twdesc" />
         <div className="md:w-2/3 w-4/5">
        
         
-          <div className="mt-6 border-b-2 py-6">
+          <div className="mt-6 py-6">
 
             <div className="flex flex-col items-center">
 
