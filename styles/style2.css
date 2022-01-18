@@ -22,11 +22,7 @@ font-display: swap;
 
 
 #bodyy {
-    background-image: url('/images/BG2.jpg');
-    background-position: 0px 0px;
-    background-size: contain;
-    background-repeat: repeat;
-    background-attachment: fixed;
+   background-color:#9fdde2;
 }
 
 .montserrat {
