@@ -5,10 +5,10 @@ export default function Home() {
   return (
     <div id="bodyy" className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
-        <title>Boring Bananas Company</title>
+        <title>Mint Baby Coterie</title>
         <link rel="icon" href="/images/favicon.jpg" />
 
-        <meta property="og:title" content="Boring Bananas Co." key="ogtitle" />
+        <meta property="og:title" content="Baby Coterie" key="ogtitle" />
         <meta property="og:description" content="Here at Boring Bananas company, we specialise in the world's finest digital bananas. We've put together a team spanning 3 continents, to bring you some of the most ‍NUTRITIOUS and DELICIOUS
 bananas out known to man." key="ogdesc" />
         <meta property="og:type" content="website" key="ogtype" />
