@@ -111,7 +111,7 @@ export default function Mint() {
     <div id="bodyy" className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
         <title>Baby Coterie</title>
-        <link rel="icon" href="/images/favicon.jpg" />
+        <link rel="icon" href="/images/favicon.png" />
 
         <meta property="og:title" content="Boring babys Co." key="ogtitle" />
         <meta property="og:description" content="Here at Boring babys company, we specialise in the world's finest digital babys. We've put together a team spanning 3 continents, to bring you some of the most ‍NUTRITIOUS and DELICIOUS
