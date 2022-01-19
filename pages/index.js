@@ -113,21 +113,19 @@ export default function Mint() {
         <title>Baby Coterie</title>
         <link rel="icon" href="/images/favicon.png" />
 
-        <meta property="og:title" content="Boring babys Co." key="ogtitle" />
-        <meta property="og:description" content="Here at Boring babys company, we specialise in the world's finest digital babys. We've put together a team spanning 3 continents, to bring you some of the most ‍NUTRITIOUS and DELICIOUS
-babys out known to man." key="ogdesc" />
+        <meta property="og:title" content="Baby Couterie" key="ogtitle" />
+        <meta property="og:description" content="Baby Coterie is a hand-drawn NFT collection with more than 80 unique traits." key="ogdesc" />
         <meta property="og:type" content="website" key="ogtype" />
-        <meta property="og:url" content="https://boringbabys.co/" key="ogurl"/>
-        <meta property="og:image" content="https://boringbabys.co/images/Hola.gif" key="ogimage"/>
-        <meta property="og:site_name" content="https://boringbabys.co/" key="ogsitename" />
+        <meta property="og:url" content="https://mint.babycoterie.io/" key="ogurl"/>
+        <meta property="og:image" content="https://mint.babycoterie.io/images/babies.png" key="ogimage"/>
+        <meta property="og:site_name" content="https://mint.babycoterie.io/" key="ogsitename" />
 
         <meta name="twitter:card" content="summary_large_image" key="twcard"/>
-        <meta property="twitter:domain" content="boringbabys.co" key="twdomain" />
-        <meta property="twitter:url" content="https://boringbabys.co/" key="twurl" />
-        <meta name="twitter:title" content="Boring babys Co." key="twtitle" />
-        <meta name="twitter:description" content="Here at boring babys company, we specialise in the world's finest digital babys. We've put together a team spanning 3 continents, to bring you some of the most ‍NUTRITIOUS and DELICIOUS
-babys out known to man." key="twdesc" />
-        <meta name="twitter:image" content="https://boringbabys.co/images/Hola.gif" key="twimage" />
+        <meta property="twitter:domain" content="mint.babycoterie.io" key="twdomain" />
+        <meta property="twitter:url" content="https://mint.babycoterie.io/" key="twurl" />
+        <meta name="twitter:title" content="Baby Couterie" key="twtitle" />
+        <meta name="twitter:description" content="Baby Coterie is a hand-drawn NFT collection with more than 80 unique traits." key="twdesc" />
+        <meta name="twitter:image" content="https://mint.babycoterie.io/images/babies.png" key="twimage" />
       </Head>
 
 
