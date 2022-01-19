@@ -76,16 +76,22 @@ export default function Mint() {
     setTotalSupply(totalSupply)
 
     const babyPrice = await babyContract.methods.babyPrice().call() 
-    setbabyPrice(babyPrice)
+    totalSupply > 600 ? setbabyPrice(babyPrice) : setbabyPrice(0)
    
   }
   
   async function mintbaby(how_many_babys) {
     if (babyContract) {
  
-      const price = Number(babyPrice)  * how_many_babys 
-
+      const _price = Number(babyPrice)  * how_many_babys 
+      let price = 0
       const gasAmount = await babyContract.methods.publicMintBaby(how_many_babys).estimateGas({from: walletAddress, value: price})
+      
+      if (totalSupply > 600)
+      {
+          price = _price
+      } 
+      
       console.log("estimated gas",gasAmount)
 
       console.log({from: walletAddress, value: price})
