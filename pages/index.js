@@ -113,7 +113,7 @@ export default function Mint() {
         <title>Baby Coterie</title>
         <link rel="icon" href="/images/favicon.png" />
 
-        <meta property="og:title" content="Baby Couterie" key="ogtitle" />
+        <meta property="og:title" content="Baby Coterie" key="ogtitle" />
         <meta property="og:description" content="Baby Coterie is a hand-drawn NFT collection with more than 80 unique traits." key="ogdesc" />
         <meta property="og:type" content="website" key="ogtype" />
         <meta property="og:url" content="https://mint.babycoterie.io/" key="ogurl"/>
@@ -123,7 +123,7 @@ export default function Mint() {
         <meta name="twitter:card" content="summary_large_image" key="twcard"/>
         <meta property="twitter:domain" content="mint.babycoterie.io" key="twdomain" />
         <meta property="twitter:url" content="https://mint.babycoterie.io/" key="twurl" />
-        <meta name="twitter:title" content="Baby Couterie" key="twtitle" />
+        <meta name="twitter:title" content="Baby Coterie" key="twtitle" />
         <meta name="twitter:description" content="Baby Coterie is a hand-drawn NFT collection with more than 80 unique traits." key="twdesc" />
         <meta name="twitter:image" content="https://mint.babycoterie.io/images/babies.png" key="twimage" />
       </Head>
