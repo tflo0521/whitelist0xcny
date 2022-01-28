@@ -151,7 +151,7 @@ export default function Mint() {
 
                 <span className="flex Poppitandfinchsans text-5xl text-white items-center bg-grey-lighter rounded rounded-r-none my-4 ">TOTAL babyS MINTED:  <span className="text-blau text-6xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 10000</span></span>
                <span className="flex Poppitandfinchsans text-4xl text-yellow-100 items-center bg-grey-lighter rounded rounded-r-none my-4 ">First 7,000 free, max 20 per tx. - INSTANT REVEAL</span>
-<span className="flex Poppitandfinchsans text-4xl text-white items-center bg-grey-lighter rounded rounded-r-none my-4 ">Price: FREE</span>
+<span className="flex Poppitandfinchsans text-4xl text-white items-center bg-grey-lighter rounded rounded-r-none my-4 ">Price: first 7000 free then 0.01 after</span>
                 <div id="mint" className="flex justify-around  mt-8 mx-6">
                   <span className="flex Poppitandfinchsans text-5xl text-white items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">GIMME</span>
                   
