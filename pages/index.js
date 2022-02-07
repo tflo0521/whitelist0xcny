@@ -137,7 +137,7 @@ export default function Mint() {
              
           </div>
           <div className="flex auth my-8 font-bold  justify-center items-center vw2">
-            {!signedIn ? <button onClick={signIn} className="PalatinoLinotype inline-block border-1 rounded-full border-black bg-white border-opacity-100 no-underline hover:text-white py-3 px-6 mx-4 shadow-lg hover:bg-red-900 hover:text-white">CONNECT WALLET WITH METAMASK</button>
+            {!signedIn ? <button onClick={signIn} className="PalatinoLinotype inline-block border-1 rounded-full border-black bg-white border-opacity-100 no-underline text-sm hover:text-white py-3 px-6 mx-4 shadow-lg hover:bg-red-900 hover:text-white">CONNECT WALLET WITH METAMASK</button>
             :
             <button onClick={signOut} className="PalatinoLinotype inline-block border-2 border-black bg-white border-opacity-100 no-underline hover:text-black py-2 px-4 mx-4 shadow-lg hover:bg-blue-500 hover:text-gray-100">WALLET CONNECTED: {walletAddress}</button>}
           </div>
