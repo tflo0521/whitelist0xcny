@@ -69,8 +69,7 @@ export default function privateSaleMint() {
     set0xCNYContract(0xCNYContract)
 
     const salebool = true
-    // console.log("privatesaleisActive" , salebool)
-    setprivateSaleStarted(salebool)
+ 
 
     const totalSupply = await 0xCNYContract.methods.totalSupply().call() 
     setTotalSupply(totalSupply)
