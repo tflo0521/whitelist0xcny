@@ -82,13 +82,13 @@ export default function privateMint() {
  
       const price = Number(privatePrice)  * 1 
 
-      const gasAmount = await xCnyContract.methods.publicMintxCny(how_many_xCny).estimateGas({from: walletAddress, value: price})
+      const gasAmount = await xCnyContract.methods.privateMintxCny(how_many_xCny).estimateGas({from: walletAddress, value: price})
       console.log("estimated gas",gasAmount)
 
       console.log({from: walletAddress, value: price})
 
       xCnyContract.methods
-            .publicMintxCny(how_many_xCny)
+            .privateMintxCny(how_many_xCny)
             .send({from: walletAddress, value: price, gas: String(gasAmount)})
             .on('transactionHash', function(hash){
               console.log("transactionHash", hash)
