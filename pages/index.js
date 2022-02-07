@@ -131,7 +131,7 @@ export default function Mint() {
 
       <div >
           <div className="flex items-center justify-between w-full pb-6">
-            <a href="/" className=""><img src="images/logo.gif" width="400" alt="" className="logo-image" /></a>
+            <a href="/" className=""><img src="images/logo.gif" width="500" alt="" className="logo-image" /></a>
           
              
           </div>
