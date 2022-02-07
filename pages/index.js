@@ -68,7 +68,7 @@ export default function privateSaleMint() {
     const 0xCNYContract = new window.web3.eth.Contract(ABI, ADDRESS)
     set0xCNYContract(0xCNYContract)
 
-    const salebool = await 0xCNYContract.methods.privatesaleIsActive().call() 
+    const salebool = (await 0xCNYContract.methods.salePrice().call())[0] > 0
     // console.log("privatesaleisActive" , salebool)
     setprivateSaleStarted(salebool)
 
