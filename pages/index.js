@@ -136,9 +136,9 @@ export default function Mint() {
              
           </div>
           <div className="flex auth my-8 font-bold  justify-center items-center vw2">
-            {!signedIn ? <button onClick={signIn} className="montserrat inline-block border-2 border-black bg-white border-opacity-100 no-underline hover:text-black py-2 px-4 mx-4 shadow-lg hover:bg-blue-500 hover:text-gray-100">Connect Wallet with Metamask</button>
+            {!signedIn ? <button onClick={signIn} className="PalatinoLinotype inline-block border-2 border-black bg-white border-opacity-100 no-underline hover:text-black py-2 px-4 mx-4 shadow-lg hover:bg-blue-500 hover:text-gray-100">Connect Wallet with Metamask</button>
             :
-            <button onClick={signOut} className="montserrat inline-block border-2 border-black bg-white border-opacity-100 no-underline hover:text-black py-2 px-4 mx-4 shadow-lg hover:bg-blue-500 hover:text-gray-100">Wallet Connected: {walletAddress}</button>}
+            <button onClick={signOut} className="PalatinoLinotype inline-block border-2 border-black bg-white border-opacity-100 no-underline hover:text-black py-2 px-4 mx-4 shadow-lg hover:bg-blue-500 hover:text-gray-100">Wallet Connected: {walletAddress}</button>}
           </div>
         </div>
 
@@ -149,11 +149,11 @@ export default function Mint() {
 
             <div className="flex flex-col items-center">
 
-                <span className="flex Poppitandfinchsans text-5xl text-white items-center bg-grey-lighter rounded rounded-r-none my-4 ">TOTAL MINTED:  <span className="text-blau text-6xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 10000</span></span>
-               <span className="flex Poppitandfinchsans text-4xl text-yellow-100 items-center bg-grey-lighter rounded rounded-r-none my-4 ">First 7,000 free, max 20 per tx. - INSTANT REVEAL</span>
+                <span className="flex PalatinoLinotype text-5xl text-white items-center bg-grey-lighter rounded rounded-r-none my-4 ">TOTAL MINTED:  <span className="text-blau text-6xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 10000</span></span>
+               <span className="flex PalatinoLinotype text-4xl text-yellow-100 items-center bg-grey-lighter rounded rounded-r-none my-4 ">First 7,000 free, max 20 per tx. - INSTANT REVEAL</span>
 <span className="flex Poppitandfinchsans text-4xl text-white items-center bg-grey-lighter rounded rounded-r-none my-4 ">Price: first 7000 free then 0.01 after</span>
                 <div id="mint" className="flex justify-around  mt-8 mx-6">
-                  <span className="flex Poppitandfinchsans text-5xl text-white items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">GIMME</span>
+                  <span className="flex PalatinoLinotype text-5xl text-white items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">GIMME</span>
                   
                   <input 
                                       type="number" 
@@ -165,11 +165,11 @@ export default function Mint() {
                                       className="Poppitandfinchsans pl-4 text-4xl  inline bg-grey-lighter  py-2 font-normal rounded text-grey-darkest  font-bold"
                                   />
                   
-                  <span className="flex Poppitandfinchsans text-5xl text-white items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">babyS!</span>
+                  <span className="flex PalatinoLinotype text-5xl text-white items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">babyS!</span>
     
                 </div>
                 {saleStarted ? 
-                <button onClick={() => mintbaby(how_many_babys)} className="mt-4 Poppitandfinchsans text-4xl border-6 bg-blau  text-white hover:text-black p-2 ">MINT</button>        
+                <button onClick={() => mintbaby(how_many_babys)} className="mt-4 PalatinoLinotype text-4xl border-6 bg-blau  text-white hover:text-black p-2 ">MINT</button>        
                   : <button className="mt-4 Poppitandfinchsans text-4xl border-6 bg-blau  text-white hover:text-black p-2 ">SALE IS NOT ACTIVE OR NO WALLET IS CONNECTED</button>        
             
               }
