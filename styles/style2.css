@@ -33,9 +33,7 @@ font-display: swap;
 
 #bodyy {
    background-color:rgba(199, 177, 136, 0.88);
-  background-image: url("/images/bg-video.mp4-high.gif");
-   background-repeat: no-repeat;
-   background-size:cover;
+ 
 }
 .PalatinoLinotype {
    font-family: PalatinoLinotype, serif;
