@@ -128,9 +128,7 @@ export default function Mint() {
         <meta name="twitter:image" content="images/logo.gif" key="twimage" />
       </Head>
 
-<video autoplay muted loop id="myVideo">
-  <source src="bg-video.mp4" type="video/mp4">
-</video>
+
     
       <div >
           <div className="flex items-center justify-between w-full pb-6">
