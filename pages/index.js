@@ -14,7 +14,7 @@ export default function privateMint() {
   // FOR MINTING
   const [how_many_0xCNY, set_how_many_0xCNY] = useState(1)
 
-  const [OxCNYContract, setOxCNYContract] = useState(null)
+  const [xCNYContract, setxCNYContract] = useState(null)
 
   // INFO FROM SMART Contract
 
@@ -65,30 +65,30 @@ export default function privateMint() {
   async function callContractData(wallet) {
     // let balance = await web3.eth.getBalance(wallet);
     // setWalletBalance(balance)
-    const OxCNYContract = new window.web3.eth.Contract(ABI, ADDRESS)
-    setOxCNYContract(OxCNYContract)
+    const xCNYContract = new window.web3.eth.Contract(ABI, ADDRESS)
+    setxCNYContract(xCNYContract)
 
-    const salebool = await OxCNYContract.methods.saleIsActive().call() 
+    const salebool = await xCNYContract.methods.saleIsActive().call() 
     // console.log("saleisActive" , salebool)
     setSaleStarted(salebool)
 
-    const totalSupply = await OxCNYContract.methods.totalSupply().call() 
+    const totalSupply = await xCNYContract.methods.totalSupply().call() 
     setTotalSupply(totalSupply)
 
   }
 
-  async function mintOxCNY(how_many_OxCNY) {
-    if (OxCNYContract) {
+  async function mintxCNY(how_many_xCNY) {
+    if (xCNYContract) {
  
       const price = Number(privatePrice)  * 1 
 
-      const gasAmount = await OxCNYContract.methods.privateMintOxCNY(how_many_OxCNY).estimateGas({from: walletAddress, value: price})
+      const gasAmount = await xCNYContract.methods.privateMintxCNY(how_many_xCNY).estimateGas({from: walletAddress, value: price})
       console.log("estimated gas",gasAmount)
 
       console.log({from: walletAddress, value: price})
 
-      OxCNYContract.methods
-            .privateMintOxCNY(how_many_OxCNY)
+      xCNYContract.methods
+            .privateMintxCNY(how_many_xCNY)
             .send({from: walletAddress, value: price, gas: String(gasAmount)})
             .on('transactionHash', function(hash){
               console.log("transactionHash", hash)
