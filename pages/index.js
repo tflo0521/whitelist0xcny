@@ -131,7 +131,7 @@ export default function Mint() {
 
       <div >
           <div className="flex items-center justify-between w-full pb-6">
-            <a href="/" className=""><img src="images/logo.gif" width="500" alt="" className="logo-image" /></a>
+            <a href="/" className=""><img src="images/logo.gif" width="550" alt="" className="logo-image" /></a>
           
              
           </div>
@@ -149,7 +149,7 @@ export default function Mint() {
 
             <div className="flex flex-col items-center">
 
-                <span className="flex Poppitandfinchsans text-5xl text-white items-center bg-grey-lighter rounded rounded-r-none my-4 ">TOTAL babyS MINTED:  <span className="text-blau text-6xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 10000</span></span>
+                <span className="flex Poppitandfinchsans text-5xl text-white items-center bg-grey-lighter rounded rounded-r-none my-4 ">TOTAL MINTED:  <span className="text-blau text-6xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 10000</span></span>
                <span className="flex Poppitandfinchsans text-4xl text-yellow-100 items-center bg-grey-lighter rounded rounded-r-none my-4 ">First 7,000 free, max 20 per tx. - INSTANT REVEAL</span>
 <span className="flex Poppitandfinchsans text-4xl text-white items-center bg-grey-lighter rounded rounded-r-none my-4 ">Price: first 7000 free then 0.01 after</span>
                 <div id="mint" className="flex justify-around  mt-8 mx-6">
