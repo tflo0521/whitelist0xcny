@@ -165,7 +165,7 @@ export default function Mint() {
                                       className="PalatinoLinotype pl-4 text-4xl  inline bg-grey-lighter  py-2 font-normal rounded text-grey-darkest  font-bold"
                                   />
                   
-                  <span className="flex PalatinoLinotype text-5xl text-white items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">!</span>
+                  <span className="flex PalatinoLinotype text-5xl text-red-900 items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">!</span>
     
                 </div>
                 {saleStarted ? 
