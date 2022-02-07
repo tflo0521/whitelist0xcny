@@ -15,7 +15,7 @@ font-display: swap;
 
 @font-face {
 font-family: 'PalatinoLinotype';
-src: url('../fonts/PalatinoLinotype-Bold.woff') format('woff');
+src: url('../fonts/PalatinoLinotype-Bold.ttf') format('ttf');
 font-weight: 700;
 font-style: regular;
 font-display: swap;
