@@ -110,7 +110,7 @@ export default function Mint() {
   return (
     <div id="bodyy" className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
-        <title>Baby Coterie</title>
+        <title>Mint | 0xCNY</title>
         <link rel="icon" href="/images/favicon.png" />
 
         <meta property="og:title" content="0xCNY" key="ogtitle" />
