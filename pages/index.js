@@ -149,9 +149,9 @@ export default function Mint() {
 
             <div className="flex flex-col items-center">
 
-                <span className="flex PalatinoLinotype text-5xl text-red-900 items-center bg-grey-lighter rounded rounded-r-none my-4 ">TOTAL MINTED: <span className="text-blau text-6xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 888</span></span>
-               <span className="flex PalatinoLinotype text-4xl text-red-900 items-center bg-grey-lighter rounded rounded-r-none my-4 ">Max: WL = 1 Public = 3/wallet</span>
-<span className="flex PalatinoLinotype text-4xl text-red-900 items-center bg-grey-lighter rounded rounded-r-none my-4 ">Price: WL = 0.066 / Public = 0.088</span>
+                <span className="flex PalatinoLinotype text-5xl text-red-900 items-center bg-grey-lighter rounded rounded-r-none my-4 ">TOTAL MINTED: &nbsp<span className="text-blau text-6xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 888</span></span>
+               <span className="flex PalatinoLinotype text-3xl text-red-900 items-center bg-grey-lighter rounded rounded-r-none my-4 ">Max: WL = 1 Public = 3/wallet</span>
+<span className="flex PalatinoLinotype text-3xl text-red-900 items-center bg-grey-lighter rounded rounded-r-none my-4 ">Price: WL = 0.066 / Public = 0.088</span>
                 <div id="mint" className="flex justify-around  mt-8 mx-6">
                   <span className="flex PalatinoLinotype text-5xl text-red-900 items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">MINT HAPPY CNY</span>
                   
