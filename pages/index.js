@@ -12,9 +12,9 @@ export default function privateMint() {
   const [walletAddress, setWalletAddress] = useState(null)
 
   // FOR MINTING
-  const [how_many_xCny, set_how_many_xCny] = useState(1)
+  const [how_many_0xCny, set_how_many_0xCny] = useState(1)
 
-  const [xCnyContract, setxCnyContract] = useState(null)
+  const [0xCnyContract, set0xCnyContract] = useState(null)
 
   // INFO FROM SMART Contract
 
@@ -65,30 +65,30 @@ export default function privateMint() {
   async function callContractData(wallet) {
     // let balance = await web3.eth.getBalance(wallet);
     // setWalletBalance(balance)
-    const xCnyContract = new window.web3.eth.Contract(ABI, ADDRESS)
-    setxCnyContract(xCnyContract)
+    const 0xCnyContract = new window.web3.eth.Contract(ABI, ADDRESS)
+    set0xCnyContract(0xCnyContract)
 
-    const salebool = await xCnyContract.methods.saleIsActive().call() 
+    const salebool = await 0xCnyContract.methods.saleIsActive().call() 
     // console.log("saleisActive" , salebool)
     setSaleStarted(salebool)
 
-    const totalSupply = await xCnyContract.methods.totalSupply().call() 
+    const totalSupply = await 0xCnyContract.methods.totalSupply().call() 
     setTotalSupply(totalSupply)
 
   }
 
-  async function mintxCny(how_many_xCny) {
-    if (xCnyContract) {
+  async function mint0xCny(how_many_0xCny) {
+    if (0xCnyContract) {
  
       const price = Number(privatePrice)  * 1 
 
-      const gasAmount = await xCnyContract.methods.privateMintxCny(how_many_xCny).estimateGas({from: walletAddress, value: price})
+      const gasAmount = await 0xCnyContract.methods.privateMint0xCny(how_many_0xCny).estimateGas({from: walletAddress, value: price})
       console.log("estimated gas",gasAmount)
 
       console.log({from: walletAddress, value: price})
 
-      xCnyContract.methods
-            .privateMintxCny(how_many_xCny)
+      0xCnyContract.methods
+            .privateMint0xCny(how_many_0xCny)
             .send({from: walletAddress, value: price, gas: String(gasAmount)})
             .on('transactionHash', function(hash){
               console.log("transactionHash", hash)
