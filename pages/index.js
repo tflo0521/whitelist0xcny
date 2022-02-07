@@ -117,7 +117,7 @@ export default function Mint() {
         <meta property="og:description" content="In Celebration of Chinese New Year we bring you 0xCNY, an alpha DAO." key="ogdesc" />
         <meta property="og:type" content="website" key="ogtype" />
         <meta property="og:url" content="https://mint.0xcny.io/" key="ogurl"/>
-        <meta property="og:image" content="https://mint.babycoterie.io/images/babies.png" key="ogimage"/>
+        <meta property="og:image" content="images/logo.gif" key="ogimage"/>
         <meta property="og:site_name" content="https://mint.0xcny.io/" key="ogsitename" />
 
         <meta name="twitter:card" content="summary_large_image" key="twcard"/>
@@ -125,7 +125,7 @@ export default function Mint() {
         <meta property="twitter:url" content="https://mint.0xcny.io/" key="twurl" />
         <meta name="twitter:title" content="0xCNY" key="twtitle" />
         <meta name="twitter:description" content="In Celebration of Chinese New Year we bring you 0xCNY, an alpha DAO." key="twdesc" />
-        <meta name="twitter:image" content="https://mint.babycoterie.io/images/babies.png" key="twimage" />
+        <meta name="twitter:image" content="images/logo.gif" key="twimage" />
       </Head>
 
 
