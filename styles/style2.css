@@ -52,6 +52,13 @@ font-display: swap;
     font-family: Poppitandfinchsans, sans-serif;
 }
 
+.gold-color {
+   rgba(199, 177, 136, 0.88);
+}
+
+.text-maroon {
+   #7d131b;
+}
 .text-blau {
     color: #7d131b;
 }
