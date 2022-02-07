@@ -1,4 +1,4 @@
-### HEYO BANANAS!
+### 0xCNY
 
 The website is made with Next.js + Tailwind CSS Example
 
