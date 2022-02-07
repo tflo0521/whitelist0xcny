@@ -29,16 +29,11 @@ font-style: regular;
 font-display: swap;
 }
 
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
+
 
 #bodyy {
    background-color:rgba(199, 177, 136, 0.88);
+  background-image: url("/images/bg-video.mp4-high.gif");
 }
 .PalatinoLinotype {
    font-family: PalatinoLinotype, serif;
