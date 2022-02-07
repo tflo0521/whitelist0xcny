@@ -12,9 +12,9 @@ export default function Mint() {
   const [walletAddress, setWalletAddress] = useState(null)
 
   // FOR MINTING
-  const [how_many_babys, set_how_many_babys] = useState(1)
+  const [how_many_xCny, set_how_many_xCny] = useState(1)
 
-  const [babyContract, setbabyContract] = useState(null)
+  const [xCnyContract, setxCnyContract] = useState(null)
 
   // INFO FROM SMART Contract
 
@@ -65,33 +65,30 @@ export default function Mint() {
   async function callContractData(wallet) {
     // let balance = await web3.eth.getBalance(wallet);
     // setWalletBalance(balance)
-    const babyContract = new window.web3.eth.Contract(ABI, ADDRESS)
-    setbabyContract(babyContract)
+    const xCnyContract = new window.web3.eth.Contract(ABI, ADDRESS)
+    setxCnyContract(xCnyContract)
 
-    const salebool = await babyContract.methods.saleIsActive().call() 
+    const salebool = await xCnyContract.methods.saleIsActive().call() 
     // console.log("saleisActive" , salebool)
     setSaleStarted(salebool)
 
-    const totalSupply = await babyContract.methods.totalSupply().call() 
+    const totalSupply = await xCnyContract.methods.totalSupply().call() 
     setTotalSupply(totalSupply)
 
-    const babyPrice = await babyContract.methods.babyPrice().call() 
-    setbabyPrice(babyPrice)
-   
   }
   
-  async function mintbaby(how_many_babys) {
-    if (babyContract) {
+  async function mintxCny(how_many_xCny) {
+    if (xCnyContract) {
  
-      const price = Number(babyPrice)  * how_many_babys 
+      const price = Number(xCnyPrice)  * how_many_xCny 
 
-      const gasAmount = await babyContract.methods.publicMintBaby(how_many_babys).estimateGas({from: walletAddress, value: price})
+      const gasAmount = await xCnyContract.methods.publicMintxCny(how_many_xCny).estimateGas({from: walletAddress, value: price})
       console.log("estimated gas",gasAmount)
 
       console.log({from: walletAddress, value: price})
 
-      babyContract.methods
-            .publicMintBaby(how_many_babys)
+      xCnyContract.methods
+            .publicMintxCny(how_many_xCny)
             .send({from: walletAddress, value: price, gas: String(gasAmount)})
             .on('transactionHash', function(hash){
               console.log("transactionHash", hash)
@@ -160,8 +157,8 @@ export default function Mint() {
                                       type="number" 
                                       min="1"
                                       max="20"
-                                      value={how_many_babys}
-                                      onChange={ e => set_how_many_babys(e.target.value) }
+                                      value={how_many_xCny}
+                                      onChange={ e => set_how_many_xCny(e.target.value) }
                                       name="" 
                                       className="PalatinoLinotype pl-4 text-4xl  inline bg-grey-lighter  py-2 font-normal rounded text-grey-darkest  font-bold"
                                   />
@@ -170,7 +167,7 @@ export default function Mint() {
     
                 </div>
                 {saleStarted ? 
-                <button onClick={() => mintbaby(how_many_babys)} className="mt-4 PalatinoLinotype text-2xl rounded-full border-6 bg-white text-black py-4 px-6 hover:text-red-900 ">MINT</button>        
+                <button onClick={() => mintxCny(how_many_xCny)} className="mt-4 PalatinoLinotype text-2xl rounded-full border-6 bg-white text-black py-4 px-6 hover:text-red-900 ">MINT</button>        
                   : <button className="mt-4 PalatinoLinotype rounded-full text-2xl border-6 bg-white py-4 px-8 text-black hover:text-red-900">SALE IS NOT ACTIVE OR NO WALLET IS CONNECTED</button>        
             
               }
