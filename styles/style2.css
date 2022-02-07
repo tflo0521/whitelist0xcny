@@ -15,7 +15,7 @@ font-display: swap;
 
 @font-face {
 font-family: 'PalatinoLinotype';
-src: url('../fonts/PalatinoLinotype-Bold.ttf') format('ttf');
+src: url('../fonts/PalatinoLinotype-Bold.ttf') format('truetype');
 font-weight: 700;
 font-style: regular;
 font-display: swap;
@@ -33,7 +33,9 @@ font-display: swap;
 #bodyy {
    background-color:rgba(199, 177, 136, 0.88);
 }
-
+.PalatinoLinotype {
+   font-famiy: PalatinoLinotype, serif;
+}
 .montserrat {
     font-family: Montserrat-Light, sans-serif;
 }
