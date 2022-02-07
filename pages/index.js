@@ -165,12 +165,12 @@ export default function Mint() {
                                       className="PalatinoLinotype pl-4 text-4xl  inline bg-grey-lighter  py-2 font-normal rounded text-grey-darkest  font-bold"
                                   />
                   
-                  <span className="flex PalatinoLinotype text-5xl text-red-900 items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">!</span>
+                  <span className="flex PalatinoLinotype text-4xl text-red-900 items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">!</span>
     
                 </div>
                 {saleStarted ? 
-                <button onClick={() => mintbaby(how_many_babys)} className="mt-4 PalatinoLinotype text-4xl border-6 bg-blau  text-white hover:text-black p-2 ">MINT</button>        
-                  : <button className="mt-4 PalatinoLinotype text-4xl border-6 bg-blau  text-white hover:text-black p-2 ">SALE IS NOT ACTIVE OR NO WALLET IS CONNECTED</button>        
+                <button onClick={() => mintbaby(how_many_babys)} className="mt-4 PalatinoLinotype text-3xl border-6 bg-blau  text-white hover:text-black p-2 ">MINT</button>        
+                  : <button className="mt-4 PalatinoLinotype text-3xl border-6 bg-blau  text-white hover:text-black p-2 ">SALE IS NOT ACTIVE OR NO WALLET IS CONNECTED</button>        
             
               }
                 
