@@ -111,7 +111,7 @@ export default function Mint() {
     <div id="bodyy" className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
         <title>Mint | 0xCNY</title>
-        <link rel="icon" href="/images/favicon.png" />
+        <link rel="icon" href="/images/favicon.ico" />
 
         <meta property="og:title" content="0xCNY" key="ogtitle" />
         <meta property="og:description" content="In Celebration of Chinese New Year we bring you 0xCNY, an alpha DAO." key="ogdesc" />
