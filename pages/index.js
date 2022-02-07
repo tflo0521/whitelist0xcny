@@ -171,7 +171,7 @@ export default function Mint() {
                 </div>
                 {saleStarted ? 
                 <button onClick={() => mintbaby(how_many_babys)} className="mt-4 PalatinoLinotype text-2xl rounded-full border-6 bg-white text-black py-4 px-6 hover:text-red-900 ">MINT</button>        
-                  : <button className="mt-4 PalatinoLinotype rounded-full text-2xl border-6 bg-white py-4 px-6 text-black hover:text-red-900">SALE IS NOT ACTIVE OR NO WALLET IS CONNECTED</button>        
+                  : <button className="mt-4 PalatinoLinotype rounded-full text-2xl border-6 bg-white py-4 px-8 text-black hover:text-red-900">SALE IS NOT ACTIVE OR NO WALLET IS CONNECTED</button>        
             
               }
                 
