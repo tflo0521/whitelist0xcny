@@ -20,7 +20,7 @@ export default function privateSaleMint() {
 
   const [totalSupply, setTotalSupply] = useState(0)
 
-  const [saleStarted, setSaleStarted] = useState(false)
+  const [privateSaleStarted, setprivateSaleStarted] = useState(false)
 
   const [privatePrice, setprivatePrice] = useState(0)
 
@@ -68,9 +68,9 @@ export default function privateSaleMint() {
     const 0xCNYContract = new window.web3.eth.Contract(ABI, ADDRESS)
     set0xCNYContract(0xCNYContract)
 
-    const salebool = await 0xCNYContract.methods.saleIsActive().call() 
-    // console.log("saleisActive" , salebool)
-    setSaleStarted(salebool)
+    const salebool = await 0xCNYContract.methods.privatesaleIsActive().call() 
+    // console.log("privatesaleisActive" , salebool)
+    setprivateSaleStarted(salebool)
 
     const totalSupply = await 0xCNYContract.methods.totalSupply().call() 
     setTotalSupply(totalSupply)
