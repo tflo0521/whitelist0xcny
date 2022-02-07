@@ -113,18 +113,18 @@ export default function Mint() {
         <title>Baby Coterie</title>
         <link rel="icon" href="/images/favicon.png" />
 
-        <meta property="og:title" content="Baby Coterie" key="ogtitle" />
-        <meta property="og:description" content="Baby Coterie is a hand-drawn NFT collection with more than 80 unique traits." key="ogdesc" />
+        <meta property="og:title" content="0xCNY" key="ogtitle" />
+        <meta property="og:description" content="In Celebration of Chinese New Year we bring you 0xCNY, an alpha DAO." key="ogdesc" />
         <meta property="og:type" content="website" key="ogtype" />
-        <meta property="og:url" content="https://mint.babycoterie.io/" key="ogurl"/>
+        <meta property="og:url" content="https://mint.0xcny.io/" key="ogurl"/>
         <meta property="og:image" content="https://mint.babycoterie.io/images/babies.png" key="ogimage"/>
-        <meta property="og:site_name" content="https://mint.babycoterie.io/" key="ogsitename" />
+        <meta property="og:site_name" content="https://mint.0xcny.io/" key="ogsitename" />
 
         <meta name="twitter:card" content="summary_large_image" key="twcard"/>
-        <meta property="twitter:domain" content="mint.babycoterie.io" key="twdomain" />
-        <meta property="twitter:url" content="https://mint.babycoterie.io/" key="twurl" />
-        <meta name="twitter:title" content="Baby Coterie" key="twtitle" />
-        <meta name="twitter:description" content="Baby Coterie is a hand-drawn NFT collection with more than 80 unique traits." key="twdesc" />
+        <meta property="twitter:domain" content="https://mint.0xcny.io/" key="twdomain" />
+        <meta property="twitter:url" content="https://mint.0xcny.io/" key="twurl" />
+        <meta name="twitter:title" content="0xCNY" key="twtitle" />
+        <meta name="twitter:description" content="In Celebration of Chinese New Year we bring you 0xCNY, an alpha DAO." key="twdesc" />
         <meta name="twitter:image" content="https://mint.babycoterie.io/images/babies.png" key="twimage" />
       </Head>
 
