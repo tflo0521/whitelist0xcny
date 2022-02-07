@@ -80,7 +80,7 @@ export default function privateMint() {
   async function mintxCny(how_many_xCny) {
     if (xCnyContract) {
  
-      const price = Number(privatePrice)  * how_many_xCny 
+      const price = Number(privatePrice)  * 1 
 
       const gasAmount = await xCnyContract.methods.publicMintxCny(how_many_xCny).estimateGas({from: walletAddress, value: price})
       console.log("estimated gas",gasAmount)
