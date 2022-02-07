@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 import {ADDRESS, ABI} from "../config.js"
 
-export default function privateMint() {
+export default function privateSaleMint() {
 
   // FOR WALLET
   const [signedIn, setSignedIn] = useState(false)
@@ -14,7 +14,7 @@ export default function privateMint() {
   // FOR MINTING
   const [how_many_0xCNY, set_how_many_0xCNY] = useState(1)
 
-  const [xCNYContract, setxCNYContract] = useState(null)
+  const [0xCNYContract, set xCNYContract] = useState(null)
 
   // INFO FROM SMART Contract
 
@@ -65,30 +65,30 @@ export default function privateMint() {
   async function callContractData(wallet) {
     // let balance = await web3.eth.getBalance(wallet);
     // setWalletBalance(balance)
-    const xCNYContract = new window.web3.eth.Contract(ABI, ADDRESS)
-    setxCNYContract(xCNYContract)
+    const 0xCNYContract = new window.web3.eth.Contract(ABI, ADDRESS)
+    set0xCNYContract(0xCNYContract)
 
-    const salebool = await xCNYContract.methods.saleIsActive().call() 
+    const salebool = await 0xCNYContract.methods.saleIsActive().call() 
     // console.log("saleisActive" , salebool)
     setSaleStarted(salebool)
 
-    const totalSupply = await xCNYContract.methods.totalSupply().call() 
+    const totalSupply = await 0xCNYContract.methods.totalSupply().call() 
     setTotalSupply(totalSupply)
 
   }
 
-  async function mintxCNY(how_many_xCNY) {
-    if (xCNYContract) {
+  async function mint0xCNY(how_many_xCNY) {
+    if (0xCNYContract) {
  
       const price = Number(privatePrice)  * 1 
 
-      const gasAmount = await xCNYContract.methods.privateMintxCNY(how_many_xCNY).estimateGas({from: walletAddress, value: price})
+      const gasAmount = await 0xCNYContract.methods.privateSaleMint0xCNY(how_many_0xCNY).estimateGas({from: walletAddress, value: price})
       console.log("estimated gas",gasAmount)
 
       console.log({from: walletAddress, value: price})
 
-      xCNYContract.methods
-            .privateMintxCNY(how_many_xCNY)
+      0xCNYContract.methods
+            .privateSaleMint0xCNY(how_many_0xCNY)
             .send({from: walletAddress, value: price, gas: String(gasAmount)})
             .on('transactionHash', function(hash){
               console.log("transactionHash", hash)
