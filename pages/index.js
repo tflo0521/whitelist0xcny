@@ -150,7 +150,7 @@ export default function Mint() {
 
             <div className="flex flex-col items-center">
 
-                <span className="flex PalatinoLinotype text-4xl gold-color items-center bg-grey-lighter rounded rounded-r-none my-4 ">TOTAL MINTED: <span className="gold-color text-4xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 888</span></span>
+                <span className="flex PalatinoLinotype text-4xl gold-color items-center bg-grey-lighter rounded rounded-r-none mb-4 ">TOTAL MINTED: <span className="gold-color text-4xl"> {!signedIn ?  <>-</>  :  <>{totalSupply}</> } / 888</span></span>
                <span className="flex PalatinoLinotype text-3xl gold-color items-center bg-grey-lighter rounded rounded-r-none my-4 ">Max: WL = 1 Public = 3/wallet</span>
 <span className="flex PalatinoLinotype text-3xl gold-color items-center bg-grey-lighter rounded rounded-r-none my-4 ">Price: WL = 0.066 / Public = 0.088</span>
                 <div id="mint" className="flex justify-around  mt-8 mx-6">
